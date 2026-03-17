@@ -1,6 +1,7 @@
 import { useState } from "react"
 import API from "../utils/api"
 import { useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 export default function Register(){
 
@@ -43,7 +44,7 @@ navigate("/dashboard")
       <button className="btn btn-success">Register</button>
     </form>
     <p>
-  Already have an account? <a href="/login">Login</a>
+  Already have an account?  <Link to="/login">Login</Link>
 </p>
     
   </div>

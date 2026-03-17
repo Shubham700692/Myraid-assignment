@@ -1,6 +1,7 @@
 import { useState,useEffect } from "react"
 import API from "../utils/api"
 import { useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 export default function Login(){
 
@@ -44,7 +45,7 @@ const handleSubmit = async(e)=>{
       <button className="btn btn-primary">Login</button>
     </form>
     <p>
-        Don't have an account? <a href="/register">Register</a>
+        Don't have an account? <Link to="/register">Register</Link>
       </p>
 
   </div>
